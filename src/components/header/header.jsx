@@ -7,6 +7,18 @@ const Header = () => {
   const toggle = () => {
     setToggleClass(!toggleClass);
   };
+  const linkName = ["Home", "Menu", "Reservations", "News", "Shop", "Contact"];
+  const renderItems = () => {
+    return linkName.map((names, indx) => {
+      return (
+        <li className="nav-item" key={indx}>
+          <Link to={`/`} className="nav-link">
+            {names}
+          </Link>
+        </li>
+      );
+    });
+  };
   return (
     <header className="">
       <div className="container">
@@ -18,38 +30,7 @@ const Header = () => {
           <Link to="/" className="logo">
             <img src={logo} alt="app logo" />
           </Link>
-          <ul className={toggleClass ? "nav-list open" : "nav-list"}>
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
-                Menu
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
-                Reservations
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
-                News
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
-                Shop
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
-                Contact
-              </Link>
-            </li>
-          </ul>
+          <ul className="nav-list">{renderItems()}</ul>
         </Nav>
       </div>
     </header>
