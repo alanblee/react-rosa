@@ -20,7 +20,7 @@ const HeroSection = () => {
           <div className="single-animation">
             <h5>Ready to be opened</h5>
             <Link to="/" className="btn cta-btn">
-              Btn
+              Explore
             </Link>
           </div>
         </div>
