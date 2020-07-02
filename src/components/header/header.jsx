@@ -1,19 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Nav } from "./navStyled";
 import logo from "../../images/logo-rosa.png";
 const Header = () => {
+  const [toggleClass, setToggleClass] = useState(false);
+  const toggle = () => {
+    setToggleClass(!toggleClass);
+  };
   return (
     <header className="">
       <div className="container">
-        <nav className="nav">
-          <div className="menu-toggle">
+        <Nav toggled={toggleClass}>
+          <div className="menu-toggle" onClick={() => toggle()}>
             <i className="fas fa-bars"></i>
             <i className="fas fa-times"></i>
           </div>
           <Link to="/" className="logo">
             <img src={logo} alt="app logo" />
           </Link>
-          <ul className="nav-list">
+          <ul className={toggleClass ? "nav-list open" : "nav-list"}>
             <li className="nav-item">
               <Link to="/" className="nav-link">
                 Home
@@ -45,7 +50,7 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-        </nav>
+        </Nav>
       </div>
     </header>
   );
