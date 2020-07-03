@@ -42,6 +42,14 @@
           background-color: $secondary-font-color;
           transition: background-color 0.5s;
         }
+        &:hover::before,
+        &:focus::before {
+          background-color: $main-font-color-dark;
+        }
+        &:hover,
+        &:focus {
+          color: $main-font-color-dark;
+        }
       }
     }
   }
