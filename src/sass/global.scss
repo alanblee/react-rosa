@@ -70,3 +70,20 @@ p {
   letter-spacing: 0.5rem;
   margin-right: -0.5rem;
 }
+
+.global-headline {
+  margin-top: 3.9rem;
+  text-align: center;
+}
+
+.asterisk {
+  font-size: 1.2rem;
+  color: $secondary-font-color;
+  margin: 0 1.6rem;
+}
+
+.headline-dark {
+  color: $main-font-color-dark;
+  letter-spacing: 0.7rem;
+  margin-right: -0.7rem;
+}

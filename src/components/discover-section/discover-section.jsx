@@ -13,6 +13,9 @@ const DiscoverSection = () => {
                 <span className="first-letter">D</span>iscover
               </h2>
               <h1 className="headline headline-dark">Our story</h1>
+              <div className="asterisk">
+                <i className="fas fa-asterisk"></i>
+              </div>
             </div>
             <p>
               t amet, consectetur adipiscing elit. Maecenas ultrices magna ac
