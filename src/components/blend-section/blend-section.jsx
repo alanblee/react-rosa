@@ -1,17 +1,17 @@
 import React from "react";
 
-const TastefulSection = () => {
+const BlendSection = () => {
   return (
-    <section className="tasteful-recipes between">
+    <section className="perfect-blend between">
       <div className="container">
         <div className="global-headline">
           <div className="animate-top">
             <h2 className="sub-headline">
-              <span className="first-letter">T</span>asteful
+              <span className="first-letter">T</span>he perfect
             </h2>
           </div>
           <div className="animate-bottom">
-            <h1 className="headline">Recipes</h1>
+            <h1 className="headline">Blend</h1>
           </div>
         </div>
       </div>
@@ -19,4 +19,4 @@ const TastefulSection = () => {
   );
 };
 
-export default TastefulSection;
+export default BlendSection;
