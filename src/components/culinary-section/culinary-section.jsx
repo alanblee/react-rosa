@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import delight1 from "../../images/delight-group-1.jpg";
+import delight2 from "../../images/delight-group-2.jpg";
+
 const CulinarySection = () => {
   return (
     <section className="culinary">
@@ -27,8 +29,17 @@ const CulinarySection = () => {
               Make a reservation
             </Link>
           </div>
-          <div className="restaurant-info-img ">
-            <img src={delight1} alt="restaurant info img" />
+          <div className="image-group">
+            <img
+              className="animate-top"
+              src={delight1}
+              alt="restaurant info img"
+            />
+            <img
+              className="animate-bottom"
+              src={delight2}
+              alt="restaurant info img"
+            />
           </div>
         </div>
       </div>
