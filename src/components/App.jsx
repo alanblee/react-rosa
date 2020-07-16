@@ -5,6 +5,8 @@ import DiscoverSection from "./discover-section/discover-section";
 import TastefulSection from "./tasteful-recipes-section/tasteful-recipes";
 import DiscoverMenuSection from "./discover-menu/discover-menu";
 import BlendSection from "./blend-section/blend-section";
+import CulinarySection from "./culinary-section/culinary-section";
+import FooterSection from "./footer/footer";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <TastefulSection />
       <DiscoverMenuSection />
       <BlendSection />
+      <CulinarySection />
+      <FooterSection />
     </div>
   );
 }
