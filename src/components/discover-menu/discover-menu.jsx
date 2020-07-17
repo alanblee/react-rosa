@@ -21,27 +21,27 @@ const DiscoverMenuSection = () => {
             <Slide left>{renderImages()}</Slide>
           </div>
           <div className="restaurant-description animate-right">
-            <Slide right>
-              <div className="global-headline">
-                <h2 className="sub-headline">
-                  <span className="first-letter">D</span>iscover
-                </h2>
-                <h1 className="headline headline-dark">Menu</h1>
-                <div className="asterisk">
-                  <i className="fas fa-asterisk"></i>
-                </div>
+            {/* <Slide right> */}
+            <div className="global-headline">
+              <h2 className="sub-headline">
+                <span className="first-letter">D</span>iscover
+              </h2>
+              <h1 className="headline headline-dark">Menu</h1>
+              <div className="asterisk">
+                <i className="fas fa-asterisk"></i>
               </div>
-              <p>
-                t amet, consectetur adipiscing elit. Maecenas ultrices magna ac
-                tristique rutrum. Curabitur nibh purus, dictum quis nulla sit
-                amet, gravida gravida lorem. Sed fringilla massa nibh, a mattis
-                ligula aliquam in. Mauris vestibulum quam a suscipit ultricies.
-                Praesent id lacinia sapien, at tincidunt metus.
-              </p>
-              <Link to="/" className="btn body-btn">
-                About Us
-              </Link>
-            </Slide>
+            </div>
+            <p>
+              t amet, consectetur adipiscing elit. Maecenas ultrices magna ac
+              tristique rutrum. Curabitur nibh purus, dictum quis nulla sit
+              amet, gravida gravida lorem. Sed fringilla massa nibh, a mattis
+              ligula aliquam in. Mauris vestibulum quam a suscipit ultricies.
+              Praesent id lacinia sapien, at tincidunt metus.
+            </p>
+            <Link to="/" className="btn body-btn">
+              About Us
+            </Link>
+            {/* </Slide> */}
           </div>
         </div>
       </div>

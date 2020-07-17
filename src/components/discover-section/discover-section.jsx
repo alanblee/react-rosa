@@ -32,9 +32,9 @@ const DiscoverSection = () => {
             </Slide>
           </div>
           <div className="restaurant-info-img animate-right">
-            <Slide right>
-              <img src={story} alt="restaurant info img" />
-            </Slide>
+            {/* <Slide right> */}
+            <img src={story} alt="restaurant info img" />
+            {/* </Slide> */}
           </div>
         </div>
       </div>
