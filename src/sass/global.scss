@@ -99,3 +99,8 @@ p {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5rem;
 }
+.padding-right {
+  @media #{$m-desktop} {
+    padding-right: 7rem;
+  }
+}

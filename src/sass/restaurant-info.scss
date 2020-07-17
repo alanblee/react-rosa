@@ -1,7 +1,14 @@
 //restaurant info
 .restaurant-info {
   text-align: center;
-
+  // media
+  @media #{$m-desktop} {
+    display: flex;
+    align-items: center;
+  }
+  & > div {
+    flex: 1;
+  }
   //description
   .restaurant-description {
     margin-bottom: 3rem;
