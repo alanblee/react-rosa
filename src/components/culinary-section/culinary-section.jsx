@@ -10,8 +10,8 @@ const CulinarySection = () => {
     <section className="culinary">
       <div className="container">
         <div className="restaurant-info">
-          <div className="restaurant-description padding-right animate-left">
-            <Slide left>
+          <Slide left>
+            <div className="restaurant-description padding-right animate-left">
               <div className="global-headline">
                 <h2 className="sub-headline">
                   <span className="first-letter">C</span>ulinary
@@ -31,8 +31,8 @@ const CulinarySection = () => {
               <Link to="/" className="btn body-btn">
                 Make a reservation
               </Link>
-            </Slide>
-          </div>
+            </div>
+          </Slide>
           <div className="image-group">
             <Fade top>
               <img

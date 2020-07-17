@@ -1,5 +1,6 @@
 import React from "react";
 import Slide from "react-reveal/Slide";
+import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 
 import story from "../../images/our-story-1.jpg";
@@ -8,8 +9,8 @@ const DiscoverSection = () => {
     <section className="discover-our-story">
       <div className="container">
         <div className="restaurant-info">
-          <div className="restaurant-description padding-right animate-left">
-            <Slide left>
+          <Slide left>
+            <div className="restaurant-description padding-right animate-left">
               <div className="global-headline">
                 <h2 className="sub-headline">
                   <span className="first-letter">D</span>iscover
@@ -29,13 +30,13 @@ const DiscoverSection = () => {
               <Link to="/" className="btn body-btn">
                 About Us
               </Link>
-            </Slide>
-          </div>
-          <div className="restaurant-info-img animate-right">
-            {/* <Slide right> */}
-            <img src={story} alt="restaurant info img" />
-            {/* </Slide> */}
-          </div>
+            </div>
+          </Slide>
+          <Fade right>
+            <div className="restaurant-info-img animate-right">
+              <img src={story} alt="restaurant info img" />
+            </div>
+          </Fade>
         </div>
       </div>
     </section>
