@@ -6,6 +6,11 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: center;
 
+  //media queries
+  @media only screen and (min-width: 900px) {
+    justify-content: space-between;
+  }
+
   //menu toggle
   .menu-toggle {
     color: #fff;
@@ -17,6 +22,10 @@ export const Nav = styled.nav`
     cursor: pointer;
     z-index: 1500;
 
+    //media queries
+    @media only screen and (min-width: 900px) {
+      display: none;
+    }
     .fa-times {
       display: none;
     }
@@ -77,6 +86,19 @@ export const Nav = styled.nav`
     z-index: 1250;
     transform: translateX(-100%);
     transition: transform 0.5s;
+
+    // media queries
+    @media only screen and (min-width: 900px) {
+      position: initial;
+      width: initial;
+      height: initial;
+      background-color: transparent;
+      padding: 0;
+      justify-content: initial;
+      flex-direction: row;
+      transform: initial;
+      transition: initial;
+    }
 
     //toggle open class
     ${({ toggled }) =>
