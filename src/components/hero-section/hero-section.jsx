@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const HeroSection = () => {
+const HeroSection = React.forwardRef((props, ref) => {
   return (
-    <section className="hero">
+    <section className="hero" ref={ref}>
       <div className="container">
         <h2 className="sub-headline">
           <span className="first-letter">W</span>
@@ -27,6 +27,6 @@ const HeroSection = () => {
       </div>
     </section>
   );
-};
+});
 
 export default HeroSection;

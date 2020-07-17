@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import NewsletterForm from "./newsletter-form";
 
-const FooterSection = () => {
+const FooterSection = ({ handleScroll }) => {
   const socials = [
     "twitter",
     "facebook-square",
@@ -25,7 +25,7 @@ const FooterSection = () => {
     <footer>
       <div className="container">
         <div className="back-to-top">
-          <Link to="#">
+          <Link to="#" onClick={handleScroll}>
             <i className="fas fa-chevron-up"></i>
           </Link>
         </div>
