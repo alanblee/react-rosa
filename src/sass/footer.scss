@@ -23,7 +23,7 @@ footer {
     }
   }
   .footer-content {
-    overflow: hidden;
+    // overflow: hidden;
     // media
     @media #{$m-desktop} {
       max-width: 77.5rem;
