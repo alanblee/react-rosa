@@ -30,7 +30,6 @@ const FooterSection = ({ handleScroll }) => {
           </Link>
         </div>
         <div className="footer-content">
-          {/* <Slide top> */}
           <div className="footer-content-about animate-up">
             <h4>About Rosa</h4>
             <div className="asterisk">
@@ -44,7 +43,6 @@ const FooterSection = ({ handleScroll }) => {
               amet, gravida gravida lorem. Sed fringilla massa nibh, a mattis
             </p>
           </div>
-          {/* </Slide> */}
           <Slide bottom>
             <div className="footer-content-divider animate-bottom">
               <div className="social-media">
