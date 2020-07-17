@@ -6,5 +6,15 @@
 
   // global sub-headline
   .sub-headline {
+    font-size: 10rem;
+
+    .first-letter {
+      font-size: 12.2rem;
+    }
+  }
+  // global headline
+  .headline {
+    font-size: 4.7rem;
+    letter-spacing: 0.8rem;
   }
 }

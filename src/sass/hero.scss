@@ -43,6 +43,11 @@
         background-color: #fff;
         position: relative;
 
+        // media
+        @media #{$m-desktop} {
+          max-width: 11.4rem;
+        }
+
         &.line-left::before,
         &.line-right::before {
           content: "";
