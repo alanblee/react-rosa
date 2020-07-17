@@ -13,9 +13,10 @@ html {
   font-family: $body-font;
   color: $body-font-color;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 section {
   padding: 3.9rem 0;
