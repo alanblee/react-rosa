@@ -8,8 +8,8 @@ const DiscoverSection = () => {
     <section className="discover-our-story">
       <div className="container">
         <div className="restaurant-info">
-          <Slide left>
-            <div className="restaurant-description padding-right animate-left">
+          <div className="restaurant-description padding-right animate-left">
+            <Slide left>
               <div className="global-headline">
                 <h2 className="sub-headline">
                   <span className="first-letter">D</span>iscover
@@ -29,13 +29,13 @@ const DiscoverSection = () => {
               <Link to="/" className="btn body-btn">
                 About Us
               </Link>
-            </div>
-          </Slide>
-          <Slide right>
-            <div className="restaurant-info-img animate-right">
+            </Slide>
+          </div>
+          <div className="restaurant-info-img animate-right">
+            <Slide right>
               <img src={story} alt="restaurant info img" />
-            </div>
-          </Slide>
+            </Slide>
+          </div>
         </div>
       </div>
     </section>

@@ -17,13 +17,11 @@ const DiscoverMenuSection = () => {
     <section className="discover-our-menu">
       <div className="container">
         <div className="restaurant-info">
-          <Slide left>
-            <div className="image-group padding-right animate-left">
-              {renderImages()}
-            </div>
-          </Slide>
-          <Slide right>
-            <div className="restaurant-description animate-right">
+          <div className="image-group padding-right animate-left">
+            <Slide left>{renderImages()}</Slide>
+          </div>
+          <div className="restaurant-description animate-right">
+            <Slide right>
               <div className="global-headline">
                 <h2 className="sub-headline">
                   <span className="first-letter">D</span>iscover
@@ -43,8 +41,8 @@ const DiscoverMenuSection = () => {
               <Link to="/" className="btn body-btn">
                 About Us
               </Link>
-            </div>
-          </Slide>
+            </Slide>
+          </div>
         </div>
       </div>
     </section>
