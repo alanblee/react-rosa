@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NewsletterForm from "./newsletter-form";
-
+import Slide from "react-reveal/Slide";
 const FooterSection = ({ handleScroll }) => {
   const socials = [
     "twitter",
@@ -30,6 +30,7 @@ const FooterSection = ({ handleScroll }) => {
           </Link>
         </div>
         <div className="footer-content">
+          {/* <Slide top> */}
           <div className="footer-content-about animate-up">
             <h4>About Rosa</h4>
             <div className="asterisk">
@@ -43,16 +44,19 @@ const FooterSection = ({ handleScroll }) => {
               amet, gravida gravida lorem. Sed fringilla massa nibh, a mattis
             </p>
           </div>
-          <div className="footer-content-divider animate-bottom">
-            <div className="social-media">
-              <h4>Follow along</h4>
-              <ul className="social-icons">{renderSocials()}</ul>
+          {/* </Slide> */}
+          <Slide bottom>
+            <div className="footer-content-divider animate-bottom">
+              <div className="social-media">
+                <h4>Follow along</h4>
+                <ul className="social-icons">{renderSocials()}</ul>
+              </div>
+              <div className="newsletter-container">
+                <h4>Newsletter</h4>
+                <NewsletterForm />
+              </div>
             </div>
-            <div className="newsletter-container">
-              <h4>Newsletter</h4>
-              <NewsletterForm />
-            </div>
-          </div>
+          </Slide>
         </div>
       </div>
     </footer>
