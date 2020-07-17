@@ -23,6 +23,11 @@ footer {
   }
   .footer-content {
     // overflow: hidden;
+    // media
+    @media #{$m-desktop} {
+      max-width: 77.5rem;
+      margin: auto;
+    }
 
     h4 {
       font-size: 1.9rem;
@@ -33,6 +38,12 @@ footer {
     }
     .footer-content-about {
       margin-bottom: 5.4rem;
+
+      // media
+      @media #{$m-desktop} {
+        max-width: 51.3rem;
+        margin: 0 auto 5.4rem;
+      }
       p {
         line-height: 2;
       }
@@ -42,6 +53,11 @@ footer {
     }
 
     .footer-content-divider {
+      // media
+      @media #{$m-desktop} {
+        display: flex;
+        justify-content: space-between;
+      }
       // social media
       .social-media {
         .social-icons {
@@ -56,7 +72,9 @@ footer {
             padding: 0.8rem 2rem;
             opacity: 0.5;
             transition: color 0.5s;
-
+            @media #{$m-desktop} {
+              opacity: 1;
+            }
             &:hover,
             &:focus {
               color: $secondary-font-color;
@@ -73,6 +91,12 @@ footer {
           display: flex;
           justify-content: center;
 
+          // media
+          @media #{$m-desktop} {
+            width: 100%;
+            max-width: 227.3rem;
+            margin: 0 1rem;
+          }
           .newsletter-input {
             width: 100%;
             max-width: 25rem;
@@ -90,6 +114,10 @@ footer {
             top: 50%;
             transform: translateY(-50%);
             margin-left: 10.5rem;
+
+            @media #{$m-desktop} {
+              margin-left: 7.2rem;
+            }
           }
         }
       }
