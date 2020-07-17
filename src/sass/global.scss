@@ -14,7 +14,9 @@ html {
   color: $body-font-color;
   scroll-behavior: smooth;
 }
-
+body {
+  overflow-x: hidden;
+}
 section {
   padding: 3.9rem 0;
 }
@@ -54,6 +56,9 @@ p {
   font-weight: 100;
   line-height: 0.4;
   letter-spacing: 0.2rem;
+  opacity: 0;
+  animation: fadeUp 0.5s forwards;
+  animation-delay: 0.5s;
   //span of the h2
   .first-letter {
     text-transform: uppercase;
@@ -69,6 +74,8 @@ p {
   font-weight: 900;
   letter-spacing: 0.5rem;
   margin-right: -0.5rem;
+  opacity: 0;
+  animation: scale 0.5s forwards;
 }
 
 .global-headline {
@@ -80,6 +87,9 @@ p {
   font-size: 1.2rem;
   color: $secondary-font-color;
   margin: 0 1.6rem;
+  opacity: 0;
+  animation: spin 0.5s forwards;
+  animation-delay: 0.7s;
 }
 
 .headline-dark {

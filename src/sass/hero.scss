@@ -42,7 +42,9 @@
         height: 0.25rem;
         background-color: #fff;
         position: relative;
-
+        opacity: 0;
+        animation: grow 2s forwards;
+        animation-delay: 0.9s;
         // media
         @media #{$m-desktop} {
           max-width: 11.4rem;
@@ -55,6 +57,9 @@
           top: 50%;
           transform: translateY(-50%);
           border: 0.6rem solid transparent;
+          opacity: 0;
+          animation: grow 0.5s forwards;
+          animation-delay: 1.2s;
         }
         &.line-right::before {
           border-right-color: #fff;
